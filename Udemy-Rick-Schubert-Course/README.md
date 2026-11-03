@@ -81,4 +81,8 @@ The workflow:
 
 The `ADMIN_PASSWORD` value is stored securely as a GitHub Actions secret.
 
-**[View GitHub Actions workflow runs](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)**
+**GitHub Actions — CI Status:**
+
+[![Playwright Tests](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)
+
+[View GitHub Actions workflows and test execution history](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)
