@@ -6,12 +6,9 @@ The project focuses on automating common e-commerce user flows and demonstrates 
 
 ## Key Features
 
-- **End-to-End Testing** — user registration, login, product catalog navigation and shopping cart interactions.
+- **End-to-End Testing** — automation of common e-commerce user flows, including authentication, product catalog navigation and shopping cart interactions.
 - **Page Object Model (POM)** — separation of page-specific locators and actions from test logic.
-- **Test Data Management** — centralized test data and dynamically generated email addresses.
-- **Environment Configuration** — sensitive credentials managed through environment variables.
-- **Playwright Assertions** — validation of page states, user actions and cart contents.
-
+- **Environment Configuration** — management of sensitive credentials through environment variables.
 ## Tech Stack
 
 - JavaScript
