@@ -1,79 +1,58 @@
-# UI Automation Tests
+# Automation QA Portfolio
 
-Автоматизированные UI-тесты для сайта [https://rahulshettyacademy.com/seleniumPractise/#/](https://rahulshettyacademy.com/seleniumPractise/#/) на базе Playwright.
+Welcome to my **Automation QA Portfolio**.
 
-## Требования
+This repository contains my automation testing projects, demonstrating my practical experience with **JavaScript** and **Playwright**.
 
-- Node.js v18+
-- Playwright v1.45+
+## Projects
 
-## Установка
+### 1. Udemy — Rick Schubert Course
 
-1. Клонируй репозиторий:
-```bash
-git clone https://github.com/dZENcode/dZENcode.git
-cd dZENcode
-```
+**Path:** [`Udemy-Rick-Schubert-Course/`](./Udemy-Rick-Schubert-Course/)
 
-2. Установи зависимости:
-```bash
-npm install
-```
+A practical automation testing project developed while completing Rick Schubert's Playwright course.
 
-3. Установи браузеры Playwright:
-```bash
-npx playwright install
-```
+- UI test automation with Playwright.
+- JavaScript.
+- Page Object Model (POM).
+- GitHub Actions integration.
+- Automated test execution through CI.
 
-## Запуск тестов
-```bash
-# Запустить все тесты
-npx playwright test
+### 2. Automation Exercise — Pet Project
 
-# Запустить конкретный файл
-npx playwright test tests/example.spec.js
+**Path:** [`AutomationExercise-PetProject/`](./AutomationExercise-PetProject/)
 
-# Запустить с видимым браузером
-npx playwright test --headed
+An independent automation testing project built to practice and demonstrate UI test automation skills.
 
-# Запустить в debug режиме
-npx playwright test --debug
+- Playwright.
+- JavaScript.
+- Automated UI testing.
+- Independent project structure and configuration.
 
-# Посмотреть отчёт после запуска
-npx playwright show-report
-```
+## Technologies
 
-## Структура проекта
-```
-dZENcode/
-├── tests/               # Тестовые сценарии
-│   └── example.spec.js
-├── playwright.config.js # Конфигурация Playwright
-├── package.json         # Зависимости проекта
-├── package-lock.json
+- JavaScript
+- Node.js
+- Playwright
+- Git and GitHub
+- GitHub Actions
+
+## Repository Structure
+
+```text
+Automation-QA-Portfolio/
+│
+├── .github/
+│   └── workflows/
+│
+├── Udemy-Rick-Schubert-Course/
+│
+├── AutomationExercise-PetProject/
+│
+├── .gitignore
 └── README.md
 ```
 
-## Покрытие тестами
+## About This Portfolio
 
-- ✅ Переход на сайт: https://rahulshettyacademy.com/seleniumPractise/#/
-- ✅ Поиск товаров по строке "ro"
-- ✅ Изменение количества товара Carrot через input (установлено 5)
-- ✅ Изменение количества товара Mushroom через кнопку увеличения (установлено 3)
-- ✅ Добавление товаров Carrot и Mushroom в корзину
-- ✅ Открытие корзины и просмотр списка товаров
-- ✅ Удаление товара Carrot из корзины
-
-## Contributing
-
-1. Создай ветку: `git checkout -b feature/new-test`
-2. Напиши тесты
-3. Проверь что все проходят: `npx playwright test`
-4. Закоммить: `git commit -m "Add new test"`
-5. Запушь: `git push origin feature/new-test`
-6. Создай Pull Request
-
-## Полезные ссылки
-
-- [Playwright Documentation](https://playwright.dev)
-- [Playwright Best Practices](https://playwright.dev/docs/best-practices)
+This repository is a collection of practical automation testing projects focused on developing and improving my QA Automation skills.
