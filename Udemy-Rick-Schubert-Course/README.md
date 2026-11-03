@@ -11,7 +11,7 @@ This project contains automated UI and API tests developed as part of the Playwr
 - **API Testing** — retrieving authentication tokens through API requests and using them in browser sessions.
 - **Network Mocking** — intercepting network requests and simulating server responses.
 - **Dynamic Test Data** — generating test data for automated test scenarios.
-- **CI Automation** — running automated tests through GitHub Actions in a Docker container.
+- **GitHub Actions CI** — automated execution of Playwright tests using GitHub Actions and Docker, with workflow runs available directly in the repository.
 
 ## Tech Stack
 
@@ -70,12 +70,15 @@ This project contains automated UI and API tests developed as part of the Playwr
 
 ## CI Automation
 
-The project uses GitHub Actions to run automated tests in a Docker-based environment.
+This project uses **GitHub Actions** to automate test execution in a Docker-based environment.
 
 The workflow:
+
 - Checks out the repository.
 - Starts the application.
 - Installs project dependencies.
 - Executes the Playwright test suite in headless mode.
 
-The `ADMIN_PASSWORD` value is stored as a GitHub Actions secret.
+The `ADMIN_PASSWORD` value is stored securely as a GitHub Actions secret.
+
+**[View GitHub Actions workflow runs](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)**
