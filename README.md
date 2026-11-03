@@ -17,11 +17,13 @@ A practical automation testing project developed while completing Rick Schubert'
 - Node.js
 - Playwright
 - GitHub Actions
+- Docker
 
 **Key Features:**
 - UI test automation with Playwright.
 - Page Object Model (POM).
-- GitHub Actions integration (CI).
+- API testing and network mocking.
+- GitHub Actions integration (CI) using Docker.
 
 **GitHub Actions — CI Status:**
 
@@ -58,4 +60,4 @@ Automation-QA-Portfolio/
 
 ## About This Portfolio
 
-This repository is a collection of practical automation testing projects focused on developing and improving my QA Automation skills.
+This repository brings together practical automation testing projects focused on developing and improving my QA Automation skills.
