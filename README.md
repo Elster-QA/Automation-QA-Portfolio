@@ -12,11 +12,23 @@ This repository contains my automation testing projects, demonstrating my practi
 
 A practical automation testing project developed while completing Rick Schubert's Playwright course.
 
+**Technologies:**
+- JavaScript
+- Node.js
+- Playwright
+- GitHub Actions
+
+**Key Features:**
 - UI test automation with Playwright.
-- JavaScript.
 - Page Object Model (POM).
-- GitHub Actions integration.
-- Automated test execution through CI.
+- Automated test execution using GitHub Actions.
+- CI workflow for automated test execution.
+
+**GitHub Actions — CI Status:**
+
+[![Playwright Tests](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)
+
+[View GitHub Actions workflows and test execution history](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)
 
 ### 2. Automation Exercise — Pet Project
 
@@ -24,18 +36,14 @@ A practical automation testing project developed while completing Rick Schubert'
 
 An independent automation testing project built to practice and demonstrate UI test automation skills.
 
-- Playwright.
-- JavaScript.
-- Automated UI testing.
-- Independent project structure and configuration.
-
-## Technologies
-
+**Technologies:**
 - JavaScript
 - Node.js
 - Playwright
-- Git and GitHub
-- GitHub Actions
+
+**Key Features:**
+- Automated UI testing.
+- Independent project structure and configuration.
 
 ## Repository Structure
 
