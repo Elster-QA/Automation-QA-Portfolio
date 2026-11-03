@@ -21,8 +21,7 @@ A practical automation testing project developed while completing Rick Schubert'
 **Key Features:**
 - UI test automation with Playwright.
 - Page Object Model (POM).
-- Automated test execution using GitHub Actions.
-- CI workflow for automated test execution.
+- GitHub Actions integration (CI).
 
 **GitHub Actions — CI Status:**
 
@@ -40,10 +39,6 @@ An independent automation testing project built to practice and demonstrate UI t
 - JavaScript
 - Node.js
 - Playwright
-
-**Key Features:**
-- Automated UI testing.
-- Independent project structure and configuration.
 
 ## Repository Structure
 
