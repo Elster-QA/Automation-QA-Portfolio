@@ -1,0 +1,24 @@
+name: PetProjectAutoEx
+on:
+  workflow_dispatch:        #  push:
+                            #   branches: [ main ]
+jobs:
+  playwrighttests:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-jammy
+      env:
+        WEEK_NAME: ${{ secrets.WEEK_NAME }}
+        WEEK_PASS: ${{ secrets.WEEK_PASS }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run tests
+        working-directory: ./AutomationExercise-PetProject
+        run:  |
+         
+          echo "Install dependencies from lockfile"
+          npm ci
+          echo "Run playwright tests"   
+          npm run test:ci
