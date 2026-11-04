@@ -2,8 +2,9 @@
   "name": "aqa-pet-project",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "test": "playwright test"
+   "scripts": {
+    "test": "playwright test --headed",
+    "test:ci": "playwright test"
   },
   "type": "commonjs",
   "devDependencies": {

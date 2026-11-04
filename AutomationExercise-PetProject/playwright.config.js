@@ -6,7 +6,7 @@ module.exports = defineConfig({
   globalSetup: require.resolve('./utils/globalSetup.js'),
   timeout: 80000,
   fullyParallel: true,
-  forbidOnly: false,
+  forbidOnly: true,
   retries: 0,
   reporter: 'line',
 

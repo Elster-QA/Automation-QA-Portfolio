@@ -1,16 +1,10 @@
 import {expect, test} from '@playwright/test'
-import {DropClass} from '../page-objects/DropClass'
+import {DropClassA} from '../page-objects/DropClassA'
 
-test('myT', async ({page})=>{
-    const dropClass = new DropClass(page)
+
+test('myName', async ({page})=>{
+    const dropClass = new DropClassA(page)
     await dropClass.visit()
 
-    await dropClass.sortByASC()
-    await dropClass.sortByDESC()
-    await dropClass.sortByDEF()
-
-    await dropClass.justPrintunionMass()
-        
-
-
+    await dropClass.dropListASC()
 })
