@@ -6,7 +6,7 @@ jobs:
   playwrighttests:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.56.1-jammy
+      image: mcr.microsoft.com/playwright:v1.64.1-jammy
       env:
         WEEK_NAME: ${{ secrets.WEEK_NAME }}
         WEEK_PASS: ${{ secrets.WEEK_PASS }}
