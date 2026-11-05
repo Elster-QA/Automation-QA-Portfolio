@@ -9,6 +9,7 @@ The project focuses on automating common e-commerce user flows and demonstrates 
 - **End-to-End Testing** — automation of common e-commerce user flows, including authentication, product catalog navigation and shopping cart interactions.
 - **Page Object Model (POM)** — separation of page-specific locators and actions from test logic.
 - **Environment Configuration** — management of sensitive credentials through environment variables.
+
 ## Tech Stack
 
 - JavaScript
@@ -50,3 +51,19 @@ Run the tests:
 npm test
 ```
 
+## CI Automation
+
+The project uses GitHub Actions to run Playwright tests in a Docker container.
+
+The workflow installs project dependencies and executes the test suite in a headless browser environment.
+
+Required environment variables are configured through GitHub Actions repository secrets:
+
+- `WEEK_NAME`
+- `WEEK_PASS`
+
+**GitHub Actions — CI Status:**
+
+[![PetProjectAutoEx](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml/badge.svg)](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml)
+
+[View GitHub Actions workflows and test execution history](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml)
