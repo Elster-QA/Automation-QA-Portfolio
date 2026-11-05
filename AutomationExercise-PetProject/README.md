@@ -4,6 +4,17 @@ UI test automation project for [Automation Exercise](https://automationexercise.
 
 The project focuses on automating common e-commerce user flows and demonstrates practical approaches to structuring and maintaining UI tests.
 
+## CI Automation
+
+The project uses **GitHub Actions** to execute Playwright tests automatically in a Docker container.
+
+The workflow installs project dependencies and runs the test suite in a headless Chromium environment.
+
+Sensitive credentials are stored as GitHub Actions repository secrets:
+
+- `WEEK_NAME`
+- `WEEK_PASS`
+
 **GitHub Actions — CI Status:**
 
 [![PetProjectAutoEx](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml/badge.svg)](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml)
@@ -56,14 +67,3 @@ Run the tests:
 ```bash
 npm test
 ```
-
-## CI Automation
-
-The project uses GitHub Actions to run Playwright tests in a Docker container.
-
-The workflow installs project dependencies and executes the test suite in a headless browser environment.
-
-Required environment variables are configured through GitHub Actions repository secrets:
-
-- `WEEK_NAME`
-- `WEEK_PASS`
