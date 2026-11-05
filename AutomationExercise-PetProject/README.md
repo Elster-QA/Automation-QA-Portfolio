@@ -1,31 +1,17 @@
 # Automation Exercise — Playwright UI Tests
 
-UI test automation project for [Automation Exercise](https://automationexercise.com/), built with JavaScript and Playwright.
+## Overview
 
-The project focuses on automating common e-commerce user flows and demonstrates practical approaches to structuring and maintaining UI tests.
+This project contains automated UI tests for [Automation Exercise](https://automationexercise.com/), an e-commerce practice website. It is built using JavaScript and Playwright and focuses on automating common user interactions and shopping flows.
 
-## CI Automation
-
-The project uses **GitHub Actions** to execute Playwright tests automatically in a Docker container.
-
-The workflow installs project dependencies and runs the test suite in a headless Chromium environment.
-
-Sensitive credentials are stored as GitHub Actions repository secrets:
-
-- `WEEK_NAME`
-- `WEEK_PASS`
-
-**GitHub Actions — CI Status:**
-
-[![PetProjectAutoEx](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml/badge.svg)](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml)
-
-[View GitHub Actions workflows and test execution history](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml)
+The project demonstrates practical approaches to UI test automation, test organization and reusable page interactions.
 
 ## Key Features
 
 - **End-to-End Testing** — automation of common e-commerce user flows, including authentication, product catalog navigation and shopping cart interactions.
 - **Page Object Model (POM)** — separation of page-specific locators and actions from test logic.
-- **Environment Configuration** — management of sensitive credentials through environment variables.
+- **Environment Configuration** — management of sensitive test credentials through environment variables.
+- **GitHub Actions CI** — automated execution of Playwright tests in a Docker-based environment.
 
 ## Tech Stack
 
@@ -34,36 +20,59 @@ Sensitive credentials are stored as GitHub Actions repository secrets:
 - Playwright
 - dotenv
 - uuid
+- GitHub Actions
+- Docker
 
 ## Project Structure
 
-- `tests/` — test specifications
-- `page-objects/` — page objects and reusable page interactions
-- `data/` — test data
-- `utils/` — global setup and environment configuration
-- `playwright.config.js` — Playwright configuration
+- `tests/` — automated test specifications.
+- `page-objects/` — page object classes containing locators and page-specific actions.
+- `data/` — test data.
+- `utils/` — global setup and environment configuration.
+- `playwright.config.js` — Playwright configuration.
 
 ## Getting Started
 
-Install dependencies:
+1. Install project dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-Install Chromium:
+2. Install Chromium:
 
-```bash
-npx playwright install chromium
-```
+   ```bash
+   npx playwright install chromium
+   ```
 
-Configure the required environment variables in a `.env` file:
+3. Configure the required environment variables in your `.env` file:
+
+   - `WEEK_NAME`
+   - `WEEK_PASS`
+
+4. Run the tests:
+
+   ```bash
+   npm test
+   ```
+
+## CI Automation
+
+This project uses **GitHub Actions** to automate Playwright test execution in a Docker-based environment.
+
+The workflow:
+
+- Checks out the repository.
+- Installs project dependencies using `npm ci`.
+- Executes the Playwright test suite in headless mode.
+
+The following credentials are stored securely as GitHub Actions repository secrets:
 
 - `WEEK_NAME`
 - `WEEK_PASS`
 
-Run the tests:
+**GitHub Actions — CI Status:**
 
-```bash
-npm test
-```
+[![PetProjectAutoEx](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml/badge.svg)](https://github.com/Elster-QA/Automation-QA-Portfolio/actions/workflows/petProjectAutoEx.yml)
+
+[View GitHub Actions workflows and test execution history](https://github.com/Elster-QA/Automation-QA-Portfolio/actions)
