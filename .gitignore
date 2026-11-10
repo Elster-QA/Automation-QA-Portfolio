@@ -10,3 +10,4 @@ node_modules/
 # Local practice test
 AutomationExercise-PetProject/tests/dropTest.spec.js
 AutomationExercise-PetProject/page-objects/DropClassA.js
+AutomationExercise-PetProject/page-objects/DropClass.js
