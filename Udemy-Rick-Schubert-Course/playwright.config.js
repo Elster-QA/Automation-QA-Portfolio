@@ -30,7 +30,8 @@ export default defineConfig({
         launchOptions: { slowMo: 250 }, // замедление 0.5 сек между действиями
       },
      },
-       //   name: 'firefox',
+    //  {
+    //      name: 'firefox',
     //   use: { 
     //   ...devices['Desktop Firefox'],
     //   headless: false,
@@ -45,7 +46,7 @@ export default defineConfig({
     //   launchOptions: { slowMo: 1000 },
     //   },
     // },
-    /*Test browser for mobile*/
+    // /*Test browser for mobile*/
     //  {
     //   name: 'Mobile chrome',
     //   use: { 
