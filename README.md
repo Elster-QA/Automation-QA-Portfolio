@@ -12,6 +12,8 @@ This repository contains my automation testing projects, demonstrating my practi
 
 A practical automation testing project developed while completing Rick Schubert's Playwright course.
 
+**Course Certificate:** [View Certificate of Completion](https://www.udemy.com/certificate/UC-8e4d8577-8dff-4378-b1cc-aa897cab0b5a/)
+
 **Technologies:**
 - JavaScript
 - Node.js
