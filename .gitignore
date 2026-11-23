@@ -12,3 +12,5 @@ AutomationExercise-PetProject/tests/dropTest.spec.js
 AutomationExercise-PetProject/page-objects/DropClassA.js
 AutomationExercise-PetProject/page-objects/DropClass.js
 **/.DS_Store
+AutomationExercise-PetProject/tests/dropTest2.spec.js
+AutomationExercise-PetProject/page-objects/DropClass2.js
